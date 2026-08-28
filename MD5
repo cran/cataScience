@@ -1,12 +1,12 @@
-ad610091902c9a8f0118c01639996360 *DESCRIPTION
+c108a99853b5180314e743fdd437a0ea *DESCRIPTION
 b6c78ff0175cc77fdefbff3adf3a292e *LICENSE
 c24e48dc9dc352a761be29269e5643e2 *NAMESPACE
-ffea9c3924dca9fad6f959131886cb3a *NEWS.md
+d0b05341c800ff66dc37d44213ce09c6 *NEWS.md
 8234e1a6e768a03c49790c3d43832e1f *R/app-deps.R
 bea9bf77b585715eb58c81eaa55cd611 *R/run_cata.R
-dd55da999693a69b9f24bceb1d1be463 *README.md
+33848c43d75f0f06fbd23a80fcaf4faa *README.md
 f76c725ac12a54514d21f1c79a039037 *inst/app/R/_disable_autoload.R
-a43379966f7f370361fd0df098d2cb1b *inst/app/R/app-function.R
+f459046d2d2c0ac602301c69f2b37a9c *inst/app/R/app-function.R
 693c1054cf684171a553721e621292d9 *inst/app/R/app-load.R
 5ca5b8231cff384a624ddddbaab1d768 *inst/app/R/app-server.R
 f9b07280cc1c538d512818a2f9a57a14 *inst/app/R/app-theme.R
