@@ -16,12 +16,17 @@
 }
 
 .navbar-brand img.navbar-logo {
-  height: 34px;
-  width: 34px;
-  object-fit: cover;
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+  box-sizing: border-box;
+  padding: 1px;
+  background: #fffdf2;
+  vertical-align: middle;
+  flex-shrink: 0;
   border-radius: 50%;
-  margin-right: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.8);
+  margin-right: 12px;
+  border: 2px solid #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
@@ -332,3 +337,10 @@
   background-color: rgba(0, 114, 178, 0.05) !important;
   color: #005a8e !important;
 }
+/* Extended workshop: readable projection and responsive lesson layout. */
+.workshop-hero { display: flex; align-items: center; gap: 28px; margin: 12px 0 28px; }
+.workshop-hero > div { flex: 1; }
+.workshop-hero > img { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; }
+.workshop-hero h1 { color: #00547f; font-weight: 700; }
+.shiny-plot-output { max-width: 100%; }
+@media (max-width: 700px) { .workshop-hero { display: block; } .workshop-hero > img { display: none; } }

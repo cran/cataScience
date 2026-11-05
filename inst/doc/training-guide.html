@@ -349,6 +349,52 @@ a self-study course. Choose modules for the audience and available time,
 use the app for demonstrations, and let participants practise on their
 own copy. This guide adapts the playbook and lab material bundled with
 the app.</p>
+<div id="the-extended-workshop" class="section level2">
+<h2>The extended workshop</h2>
+<p>Launch <code>run_catas()</code> for the connected workflow, or
+<code>run_cata()</code> for the original app. Both entry points remain
+available.</p>
+<p>For the Lao workshop, start with <strong>Why data matters</strong>.
+Let participants predict a result before revealing its denominator,
+discuss what Snow’s map can and cannot establish, and inspect Dataset
+A’s care cascade. Its district counts are independent of the synthetic
+records in B/C.</p>
+<p>In <strong>Workflow</strong>, load <strong>Dataset B: reference with
+flags</strong>, review the codebook and key checks, then join the
+facility table. The declared many-to-one join retains 604 records,
+including two unmatched records. The <strong>Apply course S7
+selection</strong> action retains 587. Compare the Yes/No denominator
+with all selected records; keep Unknown and blank visible. Each action
+records its sample size and code, and can be undone.</p>
+<p>In <strong>Statistics &gt; Public health example</strong>, the fixed
+worked example reproduces the course’s 604, 604, 587, 582, 577 and 575
+sample counts. The chi-square and regression use different declared
+denominators. Regression models use the same 575 complete-predictor
+records, with Female and Health Center as references. Discuss selection,
+functional form and within-facility correlation before interpreting
+intervals.</p>
+<p>Use <strong>Cleaning &gt; Multiple imputation</strong> to compare a
+complete synthetic dataset, complete cases, mean replacement and pooled
+multiple imputation. Inspect completed values and chains. Stable chains
+do not prove that missingness assumptions are correct in a real
+study.</p>
+<p>In <strong>Workflow &gt; Visualise</strong>, compare a bar chart and
+a sorted dot plot of the same summary. Ask participants to write one
+defensible finding and its limitation before using
+<strong>Communicate</strong>. HTML reports/dashboard files work offline.
+Project ZIP files contain the original input snapshot, selected records,
+preparation code, RStudio project, Quarto and Shiny sources. Review
+included data before sharing. Re-run <code>analysis.R</code> from the
+exported project directory to check reproducibility. The narrative needs
+human review after any changes to the data.</p>
+<p>For the separate AI chart exercise, give each tool the same synthetic
+data and question. Compare values, denominator, scales and emphasis with
+the R output. The app does not require an AI service or API key.</p>
+<p>Before travelling, install required packages, optionally install VIM
+for kNN and DSIR for its theme, then test both launchers and downloads
+without network access. Quarto is optional for the ready-made HTML
+exports.</p>
+</div>
 <div id="match-the-modules-to-a-learning-goal" class="section level2">
 <h2>Match the modules to a learning goal</h2>
 <table>
@@ -716,7 +762,7 @@ on:</p>
 <li>unresolved limitations and the next useful check.</li>
 </ul>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">packageVersion</span>(<span class="st">&quot;cataScience&quot;</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="co">#&gt; [1] &#39;2.1.4&#39;</span></span></code></pre></div>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="co">#&gt; [1] &#39;2.2.0&#39;</span></span></code></pre></div>
 <p>For a self-study learner, follow the same sequence with a shorter
 module selection and use the quiz explanations as a review. For support,
 contact the maintainer through the <a href="https://github.com/shanlong-who/cataScience">cataScience
